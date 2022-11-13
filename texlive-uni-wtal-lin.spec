@@ -1,18 +1,12 @@
-# revision 31409
-# category Package
-# catalog-ctan /macros/latex/contrib/biblatex-contrib/uni-wtal-lin
-# catalog-date 2013-08-10 17:37:59 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2
 Name:		texlive-uni-wtal-lin
-Version:	0.2
-Release:	10
+Version:	31409
+Release:	1
 Summary:	Citation style for linguistic studies at the University of Wuppertal
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/uni-wtal-lin
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-lin.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-lin.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-lin.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-lin.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ linguistic studies at the Institute of Linguistics at the
 Bergische Universitat Wuppertal.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -45,7 +39,7 @@ Bergische Universitat Wuppertal.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
