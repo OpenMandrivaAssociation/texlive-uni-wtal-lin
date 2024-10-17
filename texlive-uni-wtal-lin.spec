@@ -3,7 +3,7 @@ Version:	31409
 Release:	2
 Summary:	Citation style for linguistic studies at the University of Wuppertal
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/uni-wtal-lin
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/uni-wtal-lin
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-lin.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uni-wtal-lin.doc.r%{version}.tar.xz
